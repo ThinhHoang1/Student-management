@@ -39,8 +39,17 @@ def delete():
             lst.remove(i)
             print("Student have been deleted successfully")
 
-
-
+def search():
+    global lst
+    roll_num = input("Enter roll num student to search student: ")
+    for i in lst:
+        if i.get_rollnum() == roll_num:
+            print("Roll num:", i.get_rollnum(),)
+            print("Name: ",i.get_name())
+            print("English: ",i.Eget_mark())
+            print("Math:", i.Mget_mark())
+            print("Chemistry: ",i.cget_mark())
+            print("Phone number: ",i.getphone())
 
 def report():
     global lst
@@ -86,14 +95,13 @@ while True:
                 modify()
             if choice == 3:
                 delete()
+            if choice == 4:
+                search()
 
         if user == 2:
             report()
-
         if user == 3:
             sys.exit()
-
-
 
 
 
