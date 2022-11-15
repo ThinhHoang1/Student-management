@@ -7,12 +7,17 @@ class student:
         self.chemistry = chemistry
         self.phone_number = phone_number
 
-
-
     def get_rollnum(self):
         return self.rollnum
     def get_name(self):
         return self.name
+    def Eget_mark(self):
+        return self.english
+    def Mget_mark(self):
+        return self.math
+    def cget_mark(self):
+        return self.chemistry
+
     def set_name(self,name):
         self.name = name
     def set_english(self,english):
@@ -24,18 +29,9 @@ class student:
     def set_phone_number(self,phone_number):
         self.phone_number = phone_number
 
-    def Eget_mark(self):
-        return self.english
-    def Mget_mark(self):
-        return self.math
-    def cget_mark(self):
-        return self.chemistry
-
-
 
     def getphone(self):
         return self.phone_number
-
 
     def show(self):
         print("-------STUDENT MANAGEMENT------")
@@ -46,3 +42,4 @@ class student:
         print("Chemistry: ", self.chemistry)
         print("Phone number: ",self.phone_number)
         print("--------------")
+
